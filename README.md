@@ -4,7 +4,7 @@ Sample HelloWorld app for CoreRT
 
 Make sure you can run `build wasm` and it passes the tests.
 
-- Run this project with (adjust for where you have installed CoreRT) 
+- Compile this project with (adjust for where you have installed CoreRT) 
 ```
 "E:\GitHub\corert\Tools\dotnetcli\dotnet.exe" msbuild /m /ConsoleLoggerParameters:ForceNoAlign "/p:IlcPath=E:\GitHub\corert\bin\WebAssembly.wasm.Debug" "/p:Configuration=Debug" "/p:OSGroup=WebAssembly" "/p:Platform=wasm"  "/p:FrameworkLibPath=E:\GitHub\corert\bin\WebAssembly.wasm.Debug\lib" "/p:FrameworkObjPath=E:\GitHub\corert\bin\obj\WebAssembly.wasm.Debug\Framework"  /p:NativeCodeGen=wasm WasmHelloWorld.csproj /t:LinkNative
 ```
